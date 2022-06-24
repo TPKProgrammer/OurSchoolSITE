@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNHS PRACTICE WEB DESIGN</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/660b5483ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ <!----------------HOME-------------------->
+
+    <section class="sub-home">
+        <nav>
+            <h2> <img src="./images/logo-removebg-preview.png" width="60px"> MNHS</h2>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+              <!-- <i class="fa-solid fa-bars" onclick="showMenu()"></i> -->
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> 
+        </nav>
+
+      <h1>Contact Us</h1>
+    </section>
+
+<!----------------CONTACT CONTENT-------------------->
+
+ <section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10844.09102576606!2d120.40132787199181!3d16.067298144582644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339169af8cd36f59%3A0xf9f31d604ccf4212!2sMangaldan%20National%20High%20School!5e0!3m2!1sen!2sph!4v1655065624868!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </section>
+
+
+ <section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>P.De Guzman St</h5>
+                    <p>Mangaldan, Pangsinan</p>
+                </span>
+    
+            </div>
+          
+           <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+63 9381562662</h5>
+                <p>Monday to Saturday, 10AM tp 6PM</p>
+            </span>
+           </div> 
+           
+           <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>Mnhs@gmail.com</h5>
+                <p>Email us your query</p>
+            </span>
+           </div>
+           
+        </div>
+        <div class="contact-col">
+            <form class="">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter email address" required>
+                <input type="text" placeholder="Enter your subject" required>
+                <textarea rows="8" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn"> Send Message</button>
+            </form>
+        </div>
+    </div>
+ </section>
+
+    <!----------------FOOTER-------------------->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula nec ligula a facilisis. Ut id condimentum <br> augue. Morbi elementum quis ligula et consequat. </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by TPKpatrick</p>
+    </section>
+
+    <!--------JavaScript for toggle menu---------->
+   
+   <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script> 
+
+
+
+</body>
+</html>

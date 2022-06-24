@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNHS PRACTICE WEB DESIGN</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/660b5483ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ <!----------------HOME-------------------->
+
+    <section class="sub-home">
+        <nav>
+            <h2> <img src="./images/logo-removebg-preview.png" width="60px"> MNHS</h2>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+              <!-- <i class="fa-solid fa-bars" onclick="showMenu()"></i> -->
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> 
+        </nav>
+
+      <h1>Our Courses</h1>
+    </section>
+
+<!----------------course content-------------------->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
+        </div>
+
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
+        </div>
+
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.</p>
+        </div>
+    </div>
+</section>
+
+<!----------------facilities content-------------------->
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+    <div class="row">
+        <div class="facilities-col">
+           <img src="./images/playground.jpg" width="300px" height="270px">
+            <h3>Largest Play Ground</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="./images/englishpark.jpg" width="300px" height="270px">
+            <h3>English Park</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="./images/quadrangle.jpg" width="300px" height="270px">
+            <h3>Quadrangle</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod</p>
+        </div>
+    </div>
+</section> 
+
+
+
+    <!----------------FOOTER-------------------->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula nec ligula a facilisis. Ut id condimentum <br> augue. Morbi elementum quis ligula et consequat. </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by TPKpatrick</p>
+    </section>
+    <!--------JavaScript for toggle menu---------->
+   
+   <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+/*HOME*/
+.home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/bgg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*NAV*/
+.home nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.home nav h2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+}
+
+.home nav .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.home nav .nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.home nav .nav-links ul li::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #008000;
+    display: block;
+    transform: scale(0,1);
+    transition: transform 200ms ease-in;
+}
+
+.home nav .nav-links ul li:hover::after {
+    transform: scale(1,1);
+}
+
+/*TEXT-BOX*/
+.home .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.home .text-box h1 {
+    font-size: 40px;
+}
+
+.home .text-box h1 span {
+    color: #008000;
+}
+
+.home .text-box p {
+    margin: 20px 0 55px;
+    font-size: 13px;
+}
+
+.home .text-box .hero-btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 23px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.home .text-box .hero-btn:hover {
+    background: #008000;
+    border: 1px solid #008000;
+}
+
+.home nav .nav-links i {
+    display: none;
+}
+
+.home nav i {
+    display: none;
+}
+
+
+@media (max-width: 700px) {
+
+    .home nav h2 {
+        font-size: 20px;
+        margin: 15px;
+    }
+
+   .home nav {
+        padding: 0;
+    }
+    .home .text-box h1 {
+        font-size: 25px;
+        font-weight: bold;
+        word-spacing: 5px;
+    }
+
+    .home nav .nav-links ul li {
+        display: block;
+        border-bottom: 1px solid #fff;
+        width: 70px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home nav .nav-links {
+        position: absolute;
+        position: fixed;
+        background: #008000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    
+    .home nav .nav-links i {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+   .home nav i {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    .home nav .nav-links ul {
+        padding: 30px;
+    }
+}

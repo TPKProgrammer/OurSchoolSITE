@@ -1,0 +1,215 @@
+
+.footer {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer h3 {
+    margin-bottom: 5%;
+}
+
+.footer p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer .icons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fa4500;
+}
+
+.footer .icons i {
+    padding: 0 13px;
+} 
+
+.footer p i {
+    color: #fa4500;
+}
+
+@media (max-width: 700px) {
+    .footer h3 {
+        font-size: 15px;
+    }
+
+    .footer p {
+        font-size: 10px;
+        padding: 0;
+    }
+}
+
+/*ABOUT-US PAGE*/
+
+/*NAV*/
+.sub-home nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.sub-home nav h2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+}
+
+.sub-home nav .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.sub-home nav .nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.sub-home nav .nav-links ul li::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #008000;
+    display: block;
+    transform: scale(0,1);
+    transition: transform 200ms ease-in;
+}
+
+.sub-home nav .nav-links ul li:hover::after {
+    transform: scale(1,1);
+}
+
+.sub-home nav .nav-links i {
+    display: none;
+}
+
+.sub-home nav i {
+    display: none;
+}
+
+.sub-home {
+    width: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/grad.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-home h1 {
+    margin-top: 25px;
+    font-size: 32px;
+}
+ .about-us {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0 50px;
+ }
+
+.about-us .row {
+    display: flex;
+}
+
+ .about-us .row .about-col {
+    flex-basis: 48%;
+    padding: 30px 30px;
+ }
+
+ .about-us .row .about-col p {
+    padding: 25px 0 30px;
+    font-size: 13px;
+    font-weight: 300;
+ }
+
+ .about-us .row .about-col h1 {
+    font-size: 30px;
+    font-weight: 600;
+ }
+
+.hero-btn  {
+    color: #008000;
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid #008000;
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.hero-btn:hover {
+    background: #008000;
+    border: 1px solid #008000;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .sub-home nav .nav-links ul li {
+        display: block;
+        border-bottom: 1px solid #fff;
+        width: 70px;
+    }
+
+    .sub-home nav .nav-links {
+        position: absolute;
+        position: fixed;
+        background: #008000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    
+    .sub-home nav .nav-links i {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+   .sub-home nav i {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        margin: 10px;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    .sub-home nav .nav-links ul {
+        padding: 30px;
+    }
+
+    .sub-home nav h2 {
+        font-size: 20px;
+        margin: 15px;
+    }
+
+   .sub-home nav {
+        padding: 0;
+    }
+
+    .about-us .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .about-us .row .about-col img {
+    width: 300px;
+    align-items: center;
+   }
+
+   .sub-home h1 {
+    margin-top: 60px;
+    font-size: 30px;
+   }
+}

@@ -1,0 +1,96 @@
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.campus p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+
+.campus .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.campus .row .campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus .row .campus-col img {
+    display: block;
+    border-radius: 10px;
+}
+
+.campus .row .campus-col .layer {
+    background: transparent;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in;
+}
+
+.campus .row .campus-col .layer:hover {
+    background: rgba(0,128,0,0.5);
+    width: 87%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.campus .row .campus-col .layer h3 {
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.campus .row .campus-col .layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.campus-none {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .campus .row {
+        flex-direction: column;
+    }
+
+    .campus .row .campus-col .layer:hover {
+        background: rgba(0,128,0,0.5);
+        width: 100%;
+        border-radius: 10px;
+
+    }
+
+    .campus-none {
+        display: none;
+    }
+}

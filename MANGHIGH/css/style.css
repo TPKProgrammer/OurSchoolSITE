@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url(./home.css);
+@import url(./courses.css);
+@import url(./campus.css);
+@import url(./facilities.css);
+@import url(./testemonials.css);
+@import url(./contact.css);
+@import url(./footer.css);
+
+/*DEFAULT*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

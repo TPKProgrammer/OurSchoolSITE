@@ -1,0 +1,55 @@
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.facilities p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.facilities .row {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.facilities .row .facilities-col {
+    text-align: left;
+    flex-basis: 31%;
+    margin-bottom: 5%;
+}
+
+.facilities .row .facilities-col img {
+    border-radius: 10px;
+}
+
+.facilities .row .facilities-col h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 9px 0;
+    color: #000;
+}
+
+.facilities .row .facilities-col p {
+    padding: 0;
+    color: #000;
+}
+
+@media(max-width: 700px) {
+    .facilities .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
